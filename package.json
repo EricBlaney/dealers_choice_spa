@@ -1,0 +1,32 @@
+{
+  "name": "dealers_choice_spa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "build:dev": "npm run build -- --watch --mode=development",
+    "start:dev": "nodemon server.js --ignore dist/ --ignore src/ & npm run build:dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EricBlaney/dealers_choice_spa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EricBlaney/dealers_choice_spa/issues"
+  },
+  "homepage": "https://github.com/EricBlaney/dealers_choice_spa#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16",
+    "pg": "^8.7.3",
+    "save-dev": "^0.0.1-security",
+    "sequelize": "^6.20.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
